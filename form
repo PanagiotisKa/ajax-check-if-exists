@@ -1,0 +1,13 @@
+	<script>
+				function checkAvailability() {
+			jQuery.ajax({
+			url: "check.php",
+			data:'code='+$("#code").val(),
+			type: "POST",
+			success:function(data){
+			$("#available").html(data);
+			},
+			error:function (){}
+			});
+			}
+	</script>
