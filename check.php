@@ -7,7 +7,7 @@ $con = new connect();
 if(!empty($_POST["code"])) {
 	
 	$code = $_POST["code"];
-	$result = $con->check_coral($code);
+	$result = $con->check_email($code);
 	$row = mysqli_fetch_array($result);
 	$code_count = $row[0];
 	if($code_count>0) echo "<span style=\"color:red\" class='status-not-available'> Code Already In Use. Stop!!!<br></span>";
