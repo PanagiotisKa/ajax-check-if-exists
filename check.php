@@ -1,6 +1,6 @@
 <?php
 // AJAX CHECK
-require_once("cclass.php");
+require_once("database.php");
 
 $con = new connect();
 
